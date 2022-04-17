@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "rg" {
-  name     = "pipelinerg"
+  name     = "piprg"
   location = "east asia"
 }
 
