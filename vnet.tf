@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "rg" {
 
 resource "azurerm_virtual_network" "example" {
   name                = "vnetpipe"
-  location            = azurerm_resource_group.rg.location
+  location            = "east asia"
   resource_group_name = azurerm_resource_group.rg.name
   address_space       = ["14.0.0.0/16"]
 
