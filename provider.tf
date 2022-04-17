@@ -8,4 +8,11 @@ provider "azurerm" {
   features {}
 
 }
-
+terraform {
+  backend "azurerm" {
+    resource_group_name  = "storagerg"
+    storage_account_name = "kak"
+    container_name       = "container1"
+    key                  = "w17DCQ7B71S+nZ11pM3fl9P7apd84DVWjMxg7SyJHU7Mi4g3qhZP+o7Iuc3nORgi59mFJWkvSBx++ASt8dLfgA=="
+  }
+}
